@@ -186,6 +186,8 @@ function MessagesItems({
                             <div
                                 className="reply_icon_message"
                                 onClick={() => {
+                                    console.log('messsage_id: ', messenger_id);
+
                                     setShowReply(true);
                                     setIDReply(messenger_id);
                                     if (inputRef.current) {

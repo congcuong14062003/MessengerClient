@@ -2,15 +2,14 @@
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyDLvINwqVTVWcHa02su49zfCS3Zf2Dia_g',
-    authDomain: 'socialmedia-a6d58.firebaseapp.com',
-    projectId: 'socialmedia-a6d58',
-    storageBucket: 'socialmedia-a6d58.appspot.com',
-    messagingSenderId: '869879955893',
-    appId: '1:869879955893:web:ca19bdd601a867ff76d9fc',
-    measurementId: 'G-FXEK2EBCS7',
+  apiKey: "AIzaSyDoW4ALtC1y5s7yw7CyPbLffVXc96jFzvs",
+  authDomain: "social-media-25f2c.firebaseapp.com",
+  projectId: "social-media-25f2c",
+  storageBucket: "social-media-25f2c.firebasestorage.app",
+  messagingSenderId: "155961922461",
+  appId: "1:155961922461:web:b0a21785c74bc93a56d574",
+  measurementId: "G-4N5TJRE7DV"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 

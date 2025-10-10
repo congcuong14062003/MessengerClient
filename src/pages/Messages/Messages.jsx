@@ -95,6 +95,7 @@ function MessagesPage() {
             setMessage('');
             setFiles([]);
             // setAudioURL('');
+            setIDReply(null);  // Thêm dòng này để reset
         }
     }, [idReceiver]);
 
@@ -533,7 +534,7 @@ function MessagesPage() {
         setShowFilePond(false);
         setShowAudio(false);
         setShowReply(false);
-        setIDReply();
+        setIDReply(null);
         setLoadingSend(false);
         setIsSending(false); // Set back to false when done
     };
@@ -578,7 +579,7 @@ function MessagesPage() {
         setShowFilePond(false);
         setShowAudio(false);
         setShowReply(false);
-        setIDReply();
+        setIDReply(null);
     };
     // click nút gọi
     // Đăng ký và gửi thông báo đến người nghe
@@ -671,6 +672,10 @@ function MessagesPage() {
         setShowReply(false);
         setIDReply(null);
     };
+
+    console.log("showReply: ", showReply);
+    console.log("idReply: ", idReply);
+    
     return (
         <div className="messenger_container">
             {hasPrivateKey && ( // Chat UI
@@ -682,6 +687,9 @@ function MessagesPage() {
                             currentChatId={id_receiver}
                         />
                     </div>
+
+
+
                     <div className="center_messenger">
                         <div className="messages_container">
                             <div className="chat_header">

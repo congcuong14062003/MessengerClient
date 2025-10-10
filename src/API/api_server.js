@@ -1,4 +1,4 @@
-const API_HOST = 'http://localhost:1406/apis';
+ const API_HOST = 'http://localhost:1406/apis';
 
 // user API endpoints
 const API_SIGNUP_POST = API_HOST + '/users/signup';
